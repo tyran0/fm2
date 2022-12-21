@@ -1,0 +1,19 @@
+{
+  "name": "news-homepage",
+  "version": "1.0.0",
+  "description": "Frontend Mentor News homepage coding challange.",
+  "scripts": {
+    "sass:build": "sass --no-source-map -s compressed src/sass:dist/css",
+    "sass:watch": "sass --no-source-map -w src/sass:dist/css",
+    "preserve": "npm run sass:build",
+    "serve": "http-server ./dist -a localhost",
+    "dev": "npm run serve -- -p 5500 -c-1",
+    "start": "npm run serve"
+  },
+  "author": "tyran0",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "sass": "^1.57.0"
+  }
+}
