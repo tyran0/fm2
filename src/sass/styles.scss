@@ -1,0 +1,38 @@
+@use 'constants' as *;
+@use 'partials' as *;
+@use 'utils' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: $clr-white-900;
+    max-width: $layoutWidth;
+    margin: 0 auto;
+}
+
+.header nav {
+    display: flex;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button {
+    cursor: pointer;
+    color: $clr-white-900;
+    background-color: $clr-red-600;
+}

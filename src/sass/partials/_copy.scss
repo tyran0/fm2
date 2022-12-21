@@ -1,0 +1,21 @@
+@use '../constants' as *;
+
+.copy {
+    // Headings
+    &_heading { color: $clr-blue-100; }
+    &_heading-primary { font-size: 2.5rem; }
+    &_heading-secondary { font-size: 1.5rem; }
+        // Heading variants
+        &_heading-onBlack { color: $clr-white-900; }
+        &_heading-hero { font-size: 3.5rem; }
+        &_heading-newArticles { color: $clr-orange-600; }    
+
+    // Paragraphs
+    &_paragraph { color: $clr-blue-400; }
+    &_paragraph-onBlack { color: $clr-blue-800; }
+}
+
+.article_count {
+    font-size: 2.5rem;
+    color: $clr-blue-400;
+}
