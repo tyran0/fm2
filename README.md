@@ -25,7 +25,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 ### Links
 
 <!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
-- Live Site URL: [Netlify](https://frabjous-khapse-ee92cb.netlify.app/)
+- Live Site URL: [Netlify](https://tyran0-news-homepage.netlify.app/)
 
 ## My process
 
