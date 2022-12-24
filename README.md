@@ -4,7 +4,7 @@
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
-  <!-- - [Links](#links) -->
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   <!-- - [What I learned](#what-i-learned) -->
@@ -22,10 +22,10 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 | ------------------------------ | - |
 | Desktop version                |   |
 
-<!-- ### Links -->
+### Links
 
 <!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
-<!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Live Site URL: [Netlify](https://frabjous-khapse-ee92cb.netlify.app/)
 
 ## My process
 
