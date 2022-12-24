@@ -14,15 +14,26 @@ body {
     margin: 0 auto;
 }
 
+.header {
+    margin-top: 5rem;
+}
+
 .header nav {
     display: flex;
 }
 
 .navigation {
+    gap: $layoutGap;
     width: 100%;
     display: flex;
     justify-content: end;
     list-style-type: none;
+}
+
+.navigation_item > a {
+    @include fontWeight('Inter', 500);
+    text-decoration: none;
+    color: $clr-blue-400;
 }
 
 .image {
@@ -35,4 +46,7 @@ body {
     cursor: pointer;
     color: $clr-white-900;
     background-color: $clr-red-600;
+    @include fontWeight('Inter', 600);
+    letter-spacing: 4px;
+    padding: 1rem 1.5rem;
 }

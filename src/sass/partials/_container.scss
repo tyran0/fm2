@@ -1,0 +1,61 @@
+@use 'sass:color';
+@use '../constants' as *;
+
+.aboveFold > * {
+    margin-top: 3rem;
+}
+
+.hero {
+    --gridColumn: 1 / 3;
+    grid-column: var(--gridColumn);
+
+    .picture { grid-column: var(--gridColumn); }
+    .button { margin-top: 2rem; }
+}
+
+.newArticles {
+    --primaryheadingColor: #{$clr-orange-600};
+    --secondaryheadingColor: #{$clr-white-900};
+    --paragraphColor: #{color.adjust($clr-blue-400, $lightness: 25%)};
+    background-color: $clr-blue-100;
+    padding: 1.5rem;
+
+    .container_separator {
+        border-color: $clr-blue-400
+    }
+}
+
+.article {
+    display: flex;
+
+    .image {
+        width: 30%;
+        height: auto;
+        margin-right: 1.25rem;
+    }
+    &_count {
+        @include fontWeight('Inter', 700);
+        color: $clr-blue-800;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+
+.container_layout-grid {
+    gap: $layoutGap;
+    display: grid;
+    
+    &-twoColumns { grid-template-columns: repeat(2, 1fr); }
+    &-threeColumns { grid-template-columns: repeat(3, 1fr); }
+
+    @media only screen and (max-width: 768px) {
+        & { display: initial; }
+    }
+}
+
+.container_separator {
+    border-top: 1px solid black;
+    margin: 1.75rem 0;
+}

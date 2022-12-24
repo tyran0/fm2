@@ -1,21 +1,34 @@
 @use '../constants' as *;
 
 .copy {
-    // Headings
-    &_heading { color: $clr-blue-100; }
-    &_heading-primary { font-size: 2.5rem; }
-    &_heading-secondary { font-size: 1.5rem; }
-        // Heading variants
-        &_heading-onBlack { color: $clr-white-900; }
-        &_heading-hero { font-size: 3.5rem; }
-        &_heading-newArticles { color: $clr-orange-600; }    
-
-    // Paragraphs
-    &_paragraph { color: $clr-blue-400; }
-    &_paragraph-onBlack { color: $clr-blue-800; }
+    &_title {
+        @include fontWeight('Inter', 700);
+        font-size: 3.125rem;
+        line-height: 1.1;
+    }
+    
+    &_paragraph {
+        @include fontWeight('Inter', 400);
+        color: var(--paragraphColor, $clr-blue-400);
+        font-size: 0.875rem;
+        line-height: 1.6;
+    }
 }
 
-.article_count {
-    font-size: 2.5rem;
-    color: $clr-blue-400;
+.copy_heading {
+    color: $clr-blue-100;
+
+    &-primary {
+        @include fontWeight('Inter', 500);
+        color: var(--primaryheadingColor);
+        margin-bottom: 1.75rem;
+        font-size: 2.25rem;
+    }
+
+    &-secondary {
+        @include fontWeight('Inter', 500);
+        color: var(--secondaryheadingColor);
+        margin-bottom: 0.75rem;
+        font-size: 1.125rem;
+    }
 }

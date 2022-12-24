@@ -1,12 +1,24 @@
+
+
 // Colors
 $clr-white-900: hsl(36, 100%, 99%);
 $clr-orange-600: hsl(35, 77%, 62%);
 $clr-red-600: hsl(5, 85%, 63%);
-    // blues
-    $clr-blue-800: hsl(233, 8%, 79%);
-    $clr-blue-400: hsl(236, 13%, 42%);
-    $clr-blue-100: hsl(240, 100%, 5%);
+$clr-blue-800: hsl(233, 8%, 79%);
+$clr-blue-400: hsl(236, 13%, 42%);
+$clr-blue-100: hsl(240, 100%, 5%);
 
 // Layout
-$layoutGap: 1.5rem;
+$layoutGap: 1.75rem;
 $layoutWidth: 1024px;
+
+// Fonts
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+@mixin fontWeight($family, $weight) {
+    font-family: $family;
+    font-variation-settings: 'wght' $weight;
+}

@@ -7,7 +7,7 @@
     "sass:watch": "sass --no-source-map -w src/sass:dist/css",
     "preserve": "npm run sass:build",
     "serve": "http-server ./dist -a localhost",
-    "dev": "npm run serve -- -p 5500 -c-1",
+    "dev": "npm run serve -- -c-1 -p 5500",
     "start": "npm run serve"
   },
   "author": "tyran0",
