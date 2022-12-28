@@ -8,8 +8,11 @@
     border: 0;
 }
 
-body {
+html {
     background-color: $clr-white-900;
+}
+
+body { 
     max-width: $layoutWidth;
     margin: 0 auto;
     padding: 0 1rem;
