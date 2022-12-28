@@ -18,9 +18,9 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ### Screenshot
 
-| ![](./screenshots/desktop.png) |   |
-| ------------------------------ | - |
-| Desktop version                |   |
+| ![](./screenshots/desktop.png) | ![](./screenshots/mobile.png) |
+| ------------------------------ | ----------------------------- |
+| Desktop version                | Mobile version                |
 
 ### Links
 
