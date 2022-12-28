@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script src="./js/main.js" defer></script>
     <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
     <header class="header">
         <nav>
             <h2 class="visuallyHidden">Navigation</h2>
-            <img src="./assets/images/logo.svg">
+            <img class="image logo" src="./assets/images/logo.svg">
             <ul class="navigation">
                 <li class="navigation_item">
                     <a href="#">Home</a>
@@ -33,6 +34,9 @@
                 </li>
             </ul>
         </nav>
+        <button class="nav_toggle button button-box">
+            <img class="image" src="./assets/images/icon-menu.svg">
+        </button>
     </header>
     <main class="main">
         <article class="container aboveFold">
@@ -62,7 +66,7 @@
                                 We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
                                 But is it really fulfilling its promise?
                             </p>
-                            <button class="button">READ MORE</button> 
+                            <button class="button button-accent">READ MORE</button> 
                         </div>
                     </div>
                 </section>
@@ -72,41 +76,43 @@
                                    copy_heading-primary"
                         >New</h3>
                     </div>
-                    <article class="container">
-                        <div class="copy">
-                            <h4 class="copy_heading
-                                       copy_heading-secondary"
-                            >Hydrogen VS Electric Cars</h4>
-                            <p class="copy_paragraph">
-                                Will hydrogen-fueled cars ever catch up to EVs?
-                            </p>                            
-                        </div>
-                    </article>
-                    <hr class="container_separator">
-                    <article class="container">
-                        <div class="copy">
-                            <h4 class="copy_heading
-                                       copy_heading-secondary"
-                            >The Downsides of AI Artistry</h4>
-                            <p class="copy_paragraph">
-                                What are the possible adverse effects of on-demand AI image generation?
-                            </p>
-                        </div>
-                    </article>
-                    <hr class="container_separator">
-                    <article class="container">
-                        <div class="copy">
-                            <h4 class="copy_heading
-                                       copy_heading-secondary"
-                            >Is VC Funding Drying Up?</h4>
-                            <p class="copy_paragraph">
-                                Private funding by VC firms is down 50% YOY. We take a look at what that means.
-                            </p>
-                        </div>
-                    </article>    
+                    <div class="container_layout">
+                        <article class="container">
+                            <div class="copy">
+                                <h4 class="copy_heading
+                                           copy_heading-secondary"
+                                >Hydrogen VS Electric Cars</h4>
+                                <p class="copy_paragraph">
+                                    Will hydrogen-fueled cars ever catch up to EVs?
+                                </p>                            
+                            </div>
+                        </article>
+                        <hr class="container_separator">
+                        <article class="container">
+                            <div class="copy">
+                                <h4 class="copy_heading
+                                           copy_heading-secondary"
+                                >The Downsides of AI Artistry</h4>
+                                <p class="copy_paragraph">
+                                    What are the possible adverse effects of on-demand AI image generation?
+                                </p>
+                            </div>
+                        </article>
+                        <hr class="container_separator">
+                        <article class="container">
+                            <div class="copy">
+                                <h4 class="copy_heading
+                                           copy_heading-secondary"
+                                >Is VC Funding Drying Up?</h4>
+                                <p class="copy_paragraph">
+                                    Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                                </p>
+                            </div>
+                        </article>    
+                    </div>
                 </aside>
             </div>
-            <section class="container">
+            <section class="container popularArticles">
                 <h3 class="visuallyHidden">Popular</h3>
                 <div class="container_layout
                             container_layout-grid

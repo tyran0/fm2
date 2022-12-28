@@ -1,7 +1,7 @@
 @use 'sass:color';
 @use '../constants' as *;
 
-.aboveFold > * {
+.popularArticles {
     margin-top: 3rem;
 }
 
@@ -10,6 +10,7 @@
     grid-column: var(--gridColumn);
 
     .picture { grid-column: var(--gridColumn); }
+    .image { width: 100%; height: auto; }
     .button { margin-top: 2rem; }
 }
 
@@ -33,6 +34,7 @@
         height: auto;
         margin-right: 1.25rem;
     }
+
     &_count {
         @include fontWeight('Inter', 700);
         color: $clr-blue-800;
@@ -41,18 +43,12 @@
     }
 }
 
-
-
 .container_layout-grid {
     gap: $layoutGap;
     display: grid;
     
     &-twoColumns { grid-template-columns: repeat(2, 1fr); }
     &-threeColumns { grid-template-columns: repeat(3, 1fr); }
-
-    @media only screen and (max-width: 768px) {
-        & { display: initial; }
-    }
 }
 
 .container_separator {
