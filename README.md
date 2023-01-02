@@ -21,10 +21,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 | ------------------------------ | ----------------------------- |
 | Desktop version                | Mobile version                |
 
-### Links
-
-<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
-
 ## My process
 
 ### Built with
